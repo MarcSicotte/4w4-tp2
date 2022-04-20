@@ -1,0 +1,9 @@
+.boite__modale{
+    position: absolute; //la position absolute fait en sorte que le parent de la boite modale est body
+    width : 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    border: 3px solid purple;
+    background-color: chartreuse;
+}
