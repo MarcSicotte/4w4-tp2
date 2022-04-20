@@ -6,11 +6,14 @@
     
     <?php
             $mon_titre = get_the_title();
-            $mon_titre_filtre = substr($mon_titre,3 ,-6);
+            $mon_titre_filtre = substr($mon_titre,7);
             $_monsigle = substr($mon_titre,0, 3);
             $mon_titre_filtre = substr($mon_titre_filtre,0, strrpos($mon_titre_filtre,'(')); 
             $ma_duree = substr($mon_titre,strrpos($mon_titre,'('));
             $departement = get_field("departement");
+            $desCours = get_the_excerpt();
+            $desCours = get_the_content();
+
         ?>
             <section class="carte <?php echo $categorie[1]->slug; ?> ">
         
@@ -22,6 +25,9 @@
                    
                     <p class="carte__contenu"><?php echo the_excerpt(); ?></p>
                     <p class="cours__dep"><?= $departement; ?></p>
+                    <p class="cours_desc">
+                        <? wp_trim_words($desCours,12,"<button class='cours_desc_bouton'>Suite</button>");?>
+                    </p>
                 
                 
             </section>     

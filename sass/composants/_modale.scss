@@ -6,4 +6,10 @@
     left: 25%;
     border: 3px solid purple;
     background-color: chartreuse;
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+    &--ouvrir{
+        transform: scale(1);
+    }
 }
+

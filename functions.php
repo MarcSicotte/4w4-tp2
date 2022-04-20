@@ -7,9 +7,17 @@ wp_enqueue_style('style_css',
                 filemtime(get_template_directory() . '/style.css'),
                 false);
 
+              
+
                 wp_enqueue_style('cidw_4w_police_google',
                 "https://fonts.googleapis.com/css2?family=Oxygen&family=Poppins&display=swap",
                 false);
+               
+                wp_enqueue_script('style_css', 
+                get_template_directory_uri() . '/javascript/boite-modale.js',
+                array(),
+                filemtime(get_template_directory() . '/javascript/boite-modale.js'),
+                true);
               
 } 
 
