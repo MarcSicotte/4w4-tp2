@@ -1,0 +1,18 @@
+.recherche{
+    position: relative;
+    
+    
+    &__input{
+        
+        
+        height: 20px;
+        color:black;
+        
+    }
+
+    &__bouton{
+        position: absolute;
+        height: 20px;
+        width: 29px;
+    }
+}

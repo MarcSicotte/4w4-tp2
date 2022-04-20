@@ -1,0 +1,26 @@
+/**************************
+*
+* Gestion des Mixins
+*
+***************************/
+
+@mixin couleursTitresmain {
+    background-color: rgb(0, 0, 0);
+    color: rgb(30, 43, 155);
+    font-family: $font__header-h2;
+
+
+    
+}
+
+@mixin couleursNavfooter{
+    color: $color__link__footer;
+    &:visited{
+            color: $color__link__footer-visited;
+    }
+    &:hover{
+            color: $color__link__footer-hover;
+    }
+
+}
+

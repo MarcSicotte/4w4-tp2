@@ -1,0 +1,53 @@
+/*
+    NAVIGATION POUR LA PAGE CATEGORY.PHP
+*/
+
+.menu-categorie_cours-container{
+    width: 100%;
+    margin: 0 50% 0 50%;
+    height: fit-content;
+    .menu{ //ul
+        display: flex;
+        list-style-type: none;
+
+
+        .menu-item{ //li
+            text-align: center;
+            width: 95px;
+            margin: 0 15px;
+            padding: 4px;
+            border-radius: 10px;
+            background-color:  $color__bouton__background;
+            &:hover {
+                background-color: $color__bouton__background--hover;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                
+
+            }
+        }
+        .current-menu-item{
+            background-color: $color__bouton__background--current;
+        }
+    }
+}
+
+.filtre{
+    width: 100%;
+    display: flex;
+    margin-left: 4%;
+    margin-right: auto;
+    align-items: center;
+    a{
+        text-decoration: none;
+        margin-right: 6px;
+        margin-left: 6px;
+        color: black;
+
+        &:hover{
+            color: $color__link-hover;
+        }
+    }
+}

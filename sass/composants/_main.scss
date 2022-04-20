@@ -1,0 +1,121 @@
+/**************************
+*
+* Gestion de l'affichage du contenu des cours et de la liste
+*
+***************************/
+
+
+
+.site__main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $color__background-main;
+    justify-content: space-evenly;
+    row-gap: 20px;
+    box-shadow: 0px 0px 10px 2px #000000;
+    padding-bottom: 2%;
+    h1{
+        @include couleursTitresmain;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: fit-content;
+        
+    }
+
+    p{
+        margin-left: 15px;
+        .thumbnail{
+            width: 10%;
+            height: 10%;
+        }
+    }
+}
+.main__titre {
+    font-size: 2rem;
+    font-style: italic;
+    width: 100%;
+    display: block;
+    margin: 0 0 0 15px ;
+    font-family: 'Oxygen', sans-serif;
+
+}
+.carte {
+
+  
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 2px #000000;
+    width: 100%;
+    @media screen and (min-width: $largeur__media-tablette){
+        width: 45%;
+    
+    }
+    @media screen and (min-width: $largeur__media-desktop){
+        width: 28%;
+    }
+    
+    background-color: rgb(189, 189, 189);
+    
+}
+.web {
+    background-position: 97% 95%;
+    background-repeat: no-repeat;
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold');
+    
+}
+.jeu{
+    background-position: 97% 95%;
+    background-repeat: no-repeat;
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=games');
+    
+}
+.comm {
+    background-position: 97% 95%;
+    background-repeat: no-repeat;
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=users');
+}
+.design {
+    background-position: 97% 95%;
+    background-repeat: no-repeat;
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens');
+    // 3d https://s2.svgbox.net/materialui.svg?ic=view_in_ar
+    // palette peinture https://s2.svgbox.net/materialui.svg?ic=color_lens
+    // image https://s2.svgbox.net/octicons.svg?ic=image
+}
+.utilitaire{
+    background-position: 97% 95%;
+    background-repeat: no-repeat;
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold');
+}
+.video {
+    background-position: 97% 95%;
+    background-repeat: no-repeat;
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');
+    //https://s2.svgbox.net/materialui.svg?ic=movie
+    //camera https://s2.svgbox.net/materialui.svg?ic=voice_chat
+    // camera video https://s2.svgbox.net/octicons.svg?ic=device-camera-video
+    // video https://s2.svgbox.net/materialui.svg?ic=duo
+}
+.creation-3d {
+    background-position: 97% 95%;
+    background-repeat: no-repeat;
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=view_in_ar');
+    
+}
+.carte__titre {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin: 0;
+    font-size: 1.5rem;
+    @include couleursTitresmain;
+    a{
+        text-decoration: none;
+        color: $color__link;
+    }
+}
+.carte__contenu {
+    font-size: 0.8rem;
+    color: DimGrey;
+}

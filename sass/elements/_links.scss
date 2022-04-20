@@ -1,0 +1,35 @@
+
+
+
+
+@mixin links($couleur, $couleur-visited, $couleur-hover) {
+    display:block;
+	padding: 5px;
+	color: $couleur;
+	margin-left: 20px;
+
+	&:visited {
+		color: $couleur-visited;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $couleur-hover;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+
+
+.site__header__titres a{
+	@include links($color__link, $color__link-hover, $color__link-visited);
+}

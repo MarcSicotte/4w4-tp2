@@ -1,0 +1,43 @@
+/**
+Theme name: 2022-4w4 Ex3 Marc-Antoine Sicotte
+Author : Marc-Antoine Sicotte
+Author URI: https://github.com/MarcSicotte/4w4_MarcAntoine_Sicotte.git
+Description: Lab dans le cadre du cours 4w4 Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
+Version: 1.0 
+Require PHP: 7.4
+License: GNU General Public License v2 later
+Text Domain: cidw-4w4
+*/
+/* -----------------------------------------------------------------
+VARIABLES
+------------------------------------------------------------------- */
+@import "variables/couleurs";
+@import "variables/structure";
+@import "variables/typo";
+
+/* ---------------INITIALISATION---------- */
+@import "initialisation/_normalize";
+@import "initialisation/_boxsize";
+/* -------------------LAYOUT---------- */
+@import "layout/_layout";
+
+/* -------------------------- ELEMENTS ---------------------- */
+@import "elements/links";
+@import "elements/mixins";
+@import "elements/balises";
+
+/* -------------------------- COMPOSANTS ---------------------- */
+@import "composants/main";
+@import "composants/footer";
+@import "composants/navigation";
+@import "composants/navigation_categorie_cours";
+@import "composants/navigation_accueil";
+@import "composants/entete";
+@import "composants/erreure_404";
+@import "composants/recherche";
+@import "composants/single-post";
+@import "composants/page_standard";
+
+
+
+
