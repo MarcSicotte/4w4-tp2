@@ -11,6 +11,7 @@
             $mon_titre_filtre = substr($mon_titre_filtre,0, strrpos($mon_titre_filtre,'(')); 
             $ma_duree = substr($mon_titre,strrpos($mon_titre,'('));
             $departement = get_field("departement");
+            $nbHeures = get_field("nombre_dheures");
             $desCours = get_the_excerpt();
             $desCours = get_the_content();
 
@@ -23,6 +24,8 @@
                         <a href="<?php echo get_permalink(); ?>"><?php echo $mon_titre_filtre ?></a> 
                     </h3>
                    
+                    <div class="cours__nbre-heure"><?= $nbHeures ?></div>
+
                     <p class="carte__contenu"><?php echo the_excerpt(); ?></p>
                     <p class="cours__dep"><?= $departement; ?></p>
                     <p class="cours_desc">

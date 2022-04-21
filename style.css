@@ -1193,4 +1193,8 @@ li {
 .boite__modale--ouvrir {
   transform: scale(1);
 }
+
+.evenement__resume {
+  background-color: #bdbdbd;
+}
 /*# sourceMappingURL=style.css.map */
