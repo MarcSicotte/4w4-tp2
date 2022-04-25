@@ -574,6 +574,20 @@ li {
   color: DimGrey;
 }
 
+.cours__desc__bouton {
+  margin-left: 2px;
+  margin-top: 2px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: solid 2px #1e2b9b;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.cours__desc__bouton:hover {
+  border: solid 2px #ec740c;
+}
+
 .site__footer {
   background-color: black;
   font-family: 'Oxygen', sans-serif;
@@ -1179,7 +1193,7 @@ li {
 }
 
 .boite__modale {
-  position: absolute;
+  position: fixed;
   width: 50%;
   height: 50%;
   top: 25%;

@@ -75,7 +75,7 @@
 </footer>
     <div class="boite__modale">
         <p class="boite__modale__test">
-            ceci est un test de boîte modale
+            <?php get_the_excerpt(); ?>
         </p>
 
 

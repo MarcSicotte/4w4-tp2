@@ -56,6 +56,8 @@
     }
     
     background-color: rgb(189, 189, 189);
+
+
     
 }
 .web {
@@ -118,4 +120,19 @@
 .carte__contenu {
     font-size: 0.8rem;
     color: DimGrey;
+}
+
+.cours__desc__bouton{
+    margin-left: 2px;
+    margin-top: 2px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    border: solid 2px rgb(30, 43, 155);
+    border-radius: 3px;
+    font-weight: bold;
+
+    &:hover{
+        border: solid 2px rgb(236 ,116, 12);
+        
+    }
 }
