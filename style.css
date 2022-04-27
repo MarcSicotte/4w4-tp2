@@ -1129,6 +1129,11 @@ li {
   margin-left: 15px;
 }
 
+.site__main-typ2 .site__main-typ2 .content #gallery-1 .gallery-item {
+  background-color: white;
+  box-shadow: 0px 0px 10px 2px #000000;
+}
+
 @keyframes bienvenu {
   0% {
     color: #1e2b9b;

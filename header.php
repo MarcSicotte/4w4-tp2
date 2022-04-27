@@ -12,7 +12,7 @@
 <header class="site__header">
     <section class="site__header__titres">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>  " rel="home">
-            <h1><?php echo get_bloginfo( 'name'); ?></h1>
+            <h1><?php get_sidebar( 'site_header_logo' ); ?></h1>
         </a>
         
         <h2><?php echo get_bloginfo( 'description'); ?></h2>
