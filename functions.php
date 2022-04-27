@@ -13,7 +13,7 @@ wp_enqueue_style('style_css',
                 "https://fonts.googleapis.com/css2?family=Oxygen&family=Poppins&display=swap",
                 false);
                
-                wp_enqueue_script('style_css', 
+                wp_enqueue_script('cidw-4w4-boite-modale', 
                 get_template_directory_uri() . '/javascript/boite-modale.js',
                 array(),
                 filemtime(get_template_directory() . '/javascript/boite-modale.js'),

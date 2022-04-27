@@ -56,7 +56,8 @@
     }
     
     background-color: rgb(189, 189, 189);
-
+    
+    
 
     
 }
@@ -117,6 +118,11 @@
         color: $color__link;
     }
 }
+
+.carte__invisible{
+    display: none;
+}
+
 .carte__contenu {
     font-size: 0.8rem;
     color: DimGrey;
