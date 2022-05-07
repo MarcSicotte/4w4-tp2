@@ -1,5 +1,5 @@
 (function(){
-   
+    //Fonctionalités boîtes modale 
     let boite__modale = document.querySelector(".boite__modale");
     let cours__desc__bouton = document.querySelectorAll('.cours__desc__bouton');
     let boite__modale__ferme = document.querySelector(".boite__modale__ferme");
