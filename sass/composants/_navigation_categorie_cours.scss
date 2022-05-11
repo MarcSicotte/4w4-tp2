@@ -20,6 +20,9 @@
             background-color:  $color__bouton__background;
             &:hover {
                 background-color: $color__bouton__background--hover;
+                
+               
+                
             }
             a{
                 text-decoration: none;
@@ -27,6 +30,12 @@
                 
 
             }
+
+            &pastille__cours--survole{
+                color:purple;
+            }
+
+           
         }
         .current-menu-item{
             background-color: $color__bouton__background--current;
@@ -51,3 +60,5 @@
         }
     }
 }
+
+

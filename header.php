@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon site</title>
     <?php wp_head(); ?>
+    <style> 
+        .site__footer{
+            background-color:<?= get_theme_mod('couleur_background_footer');?>;
+        }
+        .site__header{
+            background-color: <?= get_theme_mod('background_body'); ?>;
+        }
+    </style>
     <!--Cette page gère la crétion de l'entête et du menu principal du site -->
 </head>
 <body <?php body_class("site"); ?> >

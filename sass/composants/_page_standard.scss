@@ -5,6 +5,15 @@
     row-gap: 20px;
     box-shadow: 0px 0px 10px 2px #000000;
 
+    h1{
+        @include couleursTitresmain;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: fit-content;
+        
+    }
+
     &__titre{
         display: flex;
         align-items: center;
@@ -54,7 +63,9 @@
         }
     }
 
-
+    h2{
+        margin-left: 25%;
+    }
     
 
 

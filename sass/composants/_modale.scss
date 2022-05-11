@@ -1,14 +1,21 @@
 .boite__modale{
     position: fixed; //la position absolute fait en sorte que le parent de la boite modale est body
-    width : 50%;
-    height: 50%;
-    top: 25%;
-    left: 25%;
+    width : 100%;
+    height: 100%;
     border: 3px solid $color__boite__border;
     color: $color__boite__color;
     background-color: $color__boite__background;
     transform: scale(0);
     transition: all 1s ease-in-out;
+
+    @media screen and (min-width: $largeur__media-tablette){
+        flex-direction: row;
+        width : 50%;
+        height: 50%;
+        top: 25%;
+        left: 25%;
+
+    }
     //&__fermeture{}
 
     //&__texte{}

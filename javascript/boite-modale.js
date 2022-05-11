@@ -1,5 +1,5 @@
 (function(){
-    //Fonctionalités boîtes modale 
+    //Fonctionalités boîte modale 
     let boite__modale = document.querySelector(".boite__modale");
     let cours__desc__bouton = document.querySelectorAll('.cours__desc__bouton');
     let boite__modale__ferme = document.querySelector(".boite__modale__ferme");
@@ -15,6 +15,17 @@
         })
     }
    
+    //Fonctionalités categorie cours
+    let cartes = document.querySelectorAll(".carte");
+    
+    for (const uneCarte of cartes) {
+        uneCarte.addEventListener('mouseover',function(){
+          uneCarte.classList.remove('carte');
+          uneCarte.classList.add('laCarte');
+          
+        })
+    }
+    
 
-    // this.parentNode et this.parentNode.children(numero du childrenS)
+    
 })()

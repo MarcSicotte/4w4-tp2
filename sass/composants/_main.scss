@@ -57,9 +57,37 @@
     
     background-color: rgb(189, 189, 189);
     
+    .cours_desc{
+        width: 320px;
     
+    }
 
     
+}
+
+.laCarte{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 2px #000000;
+    width: 100%;
+    @media screen and (min-width: $largeur__media-tablette){
+        width: 45%;
+    
+    }
+    @media screen and (min-width: $largeur__media-desktop){
+        width: 28%;
+    }
+    
+    background-color: rgb(189, 189, 189);
+    
+    .cours_desc{
+        width: 320px;
+    
+    }
+
+    &:hover{
+        box-shadow: 0px 0px 10px 2px rgb(236 ,116, 12);
+    }
 }
 .web {
     background-position: 97% 95%;
@@ -111,12 +139,27 @@
     align-items: center;
     column-gap: 5px;
     margin: 0;
+    font-size: 1.3rem;
+    @include couleursTitresmain;
+    a{
+        text-decoration: none;
+        color: $color__link;
+    }
+   
+}
+
+ .survole{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin: 0;
     font-size: 1.5rem;
     @include couleursTitresmain;
     a{
         text-decoration: none;
         color: $color__link;
     }
+
 }
 
 .carte__invisible{
@@ -127,6 +170,12 @@
     font-size: 0.8rem;
     color: DimGrey;
 }
+
+.cours__dep{
+    width: fit-content;
+}
+
+
 
 .cours__desc__bouton{
     margin-left: 2px;

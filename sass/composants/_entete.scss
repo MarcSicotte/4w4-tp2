@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    background: linear-gradient(23deg, $color__background-body 60%, #0c0c0c 0%);
 
     @media screen and (min-width: $largeur__media-tablette){
         flex-direction: row;
