@@ -21,7 +21,7 @@
     ?>
 
     <?php if (have_posts()): the_post();?>
-        <div class="galerie">
+        <div class="galerieImg">
             <?php the_title()?>
             <?php the_content()?>
         </div>

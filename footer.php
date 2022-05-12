@@ -75,10 +75,6 @@
 </footer>
     <div class="boite__modale">
         <button class="boite__modale__ferme">X</button>
-        <p class="boite__modale__texte">
-            <?php get_the_excerpt(); ?>
-        </p>
-
-
+        <p class="boite__modale__texte"></p>
     </div>
 <?php wp_footer();?>
