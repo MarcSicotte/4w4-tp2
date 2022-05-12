@@ -23,9 +23,9 @@ wp_enqueue_style('style_css',
                 true);
 
                 wp_enqueue_script('cidw-4w4-caroussel', 
-                get_template_directory_uri() . '/javascript/boite-modale.js',
+                get_template_directory_uri() . '/javascript/caroussel.js',
                 array(),
-                filemtime(get_template_directory() . '/javascript/boite-modale.js'),
+                filemtime(get_template_directory() . '/javascript/caroussel.js'),
                 true);
               
 } 

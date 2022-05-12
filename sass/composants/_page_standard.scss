@@ -20,35 +20,51 @@
         column-gap: 33%;
         @include couleursTitresmain;
         width: 100%;
+        
 
         .bienvenu{
             
-            margin-left: 1%;
-            animation-name: bienvenu;
-            animation-duration: 5s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
+            margin: auto;
+            @media screen and (min-width: $largeur__media-tablette){
+                margin: 0 0 0 1%;
+                animation-name: bienvenu;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            
+            }
+           
     
         }
 
         .welcome{
+            display: none;
             
-            margin: 0;
-            animation-name: welcome;
-            animation-duration: 5s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
+            @media screen and (min-width: $largeur__media-tablette){
+                display: block;
+                animation-name: welcome;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            
+            }
     
         }
 
         .mandarin{
+
+            display: none;
             
-            margin: 0;
-            animation-name: mandarin;
-            animation-duration: 5s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-    
+            @media screen and (min-width: $largeur__media-tablette){
+                display: block;
+                animation-name: mandarin;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            
+            }
+        
+
         }
 
     }
@@ -154,4 +170,3 @@
 
     
 }
-

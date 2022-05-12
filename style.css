@@ -1176,27 +1176,45 @@ li {
 }
 
 .site__main-typ2__titre .bienvenu {
-  margin-left: 1%;
-  animation-name: bienvenu;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .site__main-typ2__titre .bienvenu {
+    margin: 0 0 0 1%;
+    animation-name: bienvenu;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
 }
 
 .site__main-typ2__titre .welcome {
-  margin: 0;
-  animation-name: welcome;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .site__main-typ2__titre .welcome {
+    display: block;
+    animation-name: welcome;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
 }
 
 .site__main-typ2__titre .mandarin {
-  margin: 0;
-  animation-name: mandarin;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .site__main-typ2__titre .mandarin {
+    display: block;
+    animation-name: mandarin;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
 }
 
 .site__main-typ2 .site__main-typ2 .content {
