@@ -20,6 +20,7 @@
     let bouton = document.createElement('button')
     bouton.dataset.index = index++
     boite__carrousel__navigation.append(bouton);
+    //fonction permettant la navigaton boite du carrousel
     bouton.addEventListener('mousedown', function(){
       elmImg.setAttribute('src', galerie__img[this.dataset.index].getAttribute('src'))
     })
