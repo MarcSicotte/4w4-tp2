@@ -5,6 +5,11 @@
   let boite__modale__texte = document.querySelector('.boite__modale__texte');
   let galerie__img = document.querySelectorAll('.galerie img')
   console.log(galerie__img.length)
+
+  boite__modale__ferme.addEventListener('mousedown', function(){
+    boite__modale.classList.remove('boite__modale--ouvrir');
+
+})
   
   let elmImg = document.createElement('img')
 
