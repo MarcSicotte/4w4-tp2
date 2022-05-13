@@ -24,10 +24,10 @@ wp_enqueue_style('style_css',
 
                 
 
-                wp_register_script('cidw-4w4-caroussel', 
-                    get_template_directory_uri() . '/javascript/caroussel.js',
+                wp_register_script('cidw-4w4-carrousel', 
+                    get_template_directory_uri() . '/javascript/carrousel.js',
                     array(),
-                    filemtime(get_template_directory() . '/javascript/caroussel.js'),
+                    filemtime(get_template_directory() . '/javascript/carrousel.js'),
                     true);
 
                   if(is_category(['cours', 'web', 'design', 'creation-3d', 'jeu', 'video', 'utilitaire'])){
@@ -35,7 +35,7 @@ wp_enqueue_style('style_css',
                   }
                   
                   if(is_front_page()){
-                    wp_enqueue_script('cidw-4w4-caroussel');
+                    wp_enqueue_script('cidw-4w4-carrousel');
                   }
                   
               
