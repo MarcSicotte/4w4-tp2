@@ -73,6 +73,7 @@
 
         
 </footer>
+<!-- intégration boite modale et carrousel -->
     <div class="boite__modale">
         <button class="boite__modale__ferme">X</button>
         <p class="boite__modale__texte"></p>
