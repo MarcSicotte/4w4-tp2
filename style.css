@@ -875,13 +875,21 @@ li {
 
 .menu-categorie_cours-container .menu {
   display: flex;
+  flex-direction: column;
   list-style-type: none;
+}
+
+@media screen and (min-width: 600px) {
+  .menu-categorie_cours-container .menu {
+    flex-direction: row;
+  }
 }
 
 .menu-categorie_cours-container .menu .menu-item {
   text-align: center;
   width: 95px;
   margin: 0 15px;
+  margin-bottom: 10px;
   padding: 4px;
   border-radius: 10px;
   background-color: #1e2b9b;
