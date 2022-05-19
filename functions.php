@@ -1,4 +1,7 @@
 <?php
+
+require_once("options/apparence.php");
+
 function cidw_4w4_enqueue() {
 // wp_enqueue_style('style_css', get_template_directory_uri() . '/style.css')
 wp_enqueue_style('style_css', 
@@ -13,11 +16,28 @@ wp_enqueue_style('style_css',
                 "https://fonts.googleapis.com/css2?family=Oxygen&family=Poppins&display=swap",
                 false);
                
-                wp_enqueue_script('style_css', 
-                get_template_directory_uri() . '/javascript/boite-modale.js',
-                array(),
-                filemtime(get_template_directory() . '/javascript/boite-modale.js'),
-                true);
+                wp_register_script('cidw-4w4-boite-modale', 
+                    get_template_directory_uri() . '/javascript/boite-modale.js',
+                    array(),
+                    filemtime(get_template_directory() . '/javascript/boite-modale.js'),
+                    true);
+
+                
+
+                wp_register_script('cidw-4w4-carrousel', 
+                    get_template_directory_uri() . '/javascript/carrousel.js',
+                    array(),
+                    filemtime(get_template_directory() . '/javascript/carrousel.js'),
+                    true);
+
+                  if(is_category(['cours', 'web', 'design', 'creation-3d', 'jeu', 'video', 'utilitaire'])){
+                    wp_enqueue_script('cidw-4w4-boite-modale');
+                  }
+                  
+                  if(is_front_page()){
+                    wp_enqueue_script('cidw-4w4-carrousel');
+                  }
+                  
               
 } 
 
@@ -31,6 +51,7 @@ function cidw_4w4_enregistre_mon_menu() {
     'lien_externe'=> __( 'Lien externe', 'cidw_4w4' ) ,
     'menu_categorie_cours'=> __( 'categorie cours', 'cidw_4w4' ) ,
     'menu_accueil' =>__('Menu accueil', 'cidw_4w4'),
+    'menu_atelier' =>__('Atelier', 'cidw_4w4'),
     'footer'=> __('Menu secondaire', 'cidw_4w4'))
   );
 }
@@ -109,6 +130,18 @@ function my_register_sidebars() {
             'after_title'   => '</h3>',
         )
         );
+
+        register_sidebar(
+          array(
+              'id'            => 'logo',
+              'name'          => __( 'logo' ),
+              'description'   => __( 'A short description of the sidebar.' ),
+              'before_widget' => '<div id="%1$s" class="widget %2$s">',
+              'after_widget'  => '</div>',
+              'before_title'  => '<h3 class="widget-title">',
+              'after_title'   => '</h3>',
+          )
+          );
 
 }
 

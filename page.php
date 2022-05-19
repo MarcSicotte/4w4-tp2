@@ -6,7 +6,7 @@
       <h1><?php the_title(); ?></h1> 
     <div class="site__main-type2__content">  
            
-            <?php echo get_the_content(); ?>
+             <?php the_content(); ?>
                 
     </div>   
 

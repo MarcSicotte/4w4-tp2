@@ -73,14 +73,13 @@
 
         
 </footer>
+<!-- intégration boite modale et carrousel -->
     <div class="boite__modale">
-        <p class="boite__modale__test">
-            ceci est un test de boîte modale
-        </p>
-
-
+        <button class="boite__modale__ferme">X</button>
+        <p class="boite__modale__texte"></p>
+    </div>
+    <div class="boite__carrousel">
+        <button class="boite__carrousel__fermeture">X</button>
+        <section class="boite__carrousel__navigation"></section>
     </div>
 <?php wp_footer();?>
-
-
-

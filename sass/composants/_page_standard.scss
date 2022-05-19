@@ -5,41 +5,66 @@
     row-gap: 20px;
     box-shadow: 0px 0px 10px 2px #000000;
 
+    h1{
+        @include couleursTitresmain;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: fit-content;
+        
+    }
+
     &__titre{
         display: flex;
         align-items: center;
         column-gap: 33%;
         @include couleursTitresmain;
         width: 100%;
+        
 
         .bienvenu{
             
-            margin-left: 1%;
-            animation-name: bienvenu;
-            animation-duration: 5s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
+            margin: auto;
+            @media screen and (min-width: $largeur__media-tablette){
+                margin: 0 0 0 1%;
+                animation-name: bienvenu;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            
+            }
+           
     
         }
 
         .welcome{
+            display: none;
             
-            margin: 0;
-            animation-name: welcome;
-            animation-duration: 5s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
+            @media screen and (min-width: $largeur__media-tablette){
+                display: block;
+                animation-name: welcome;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            
+            }
     
         }
 
         .mandarin{
+
+            display: none;
             
-            margin: 0;
-            animation-name: mandarin;
-            animation-duration: 5s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-    
+            @media screen and (min-width: $largeur__media-tablette){
+                display: block;
+                animation-name: mandarin;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            
+            }
+        
+
         }
 
     }
@@ -47,9 +72,16 @@
     
     .site__main-typ2 .content{
         margin-left: 15px;
+
+        #gallery-1 .gallery-item{
+            background-color: white;
+            box-shadow: 0px 0px 10px 2px #000000;
+        }
     }
 
-
+    h2{
+        margin-left: 25%;
+    }
     
 
 
@@ -138,4 +170,3 @@
 
     
 }
-

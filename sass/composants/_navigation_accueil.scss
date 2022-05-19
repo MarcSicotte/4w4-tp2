@@ -2,7 +2,7 @@
     NAVIGATION POUR LA PAGE FRONT-PAGE.PHP
 */
 
-.menu-accueil-container, .menu-evenement-container{ //nav
+.menu-accueil-container, .menu-evenement-container, .menu-atelier-container{ //nav
     .menu{ //ul
         display: flex;
         flex-direction: column;
@@ -35,13 +35,29 @@
 
         }
 
-        .accueil__projet a .menu-item-icone{
+        .accueil__projets a .menu-item-icone{
             background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=star");
         }
 
         .accueil__journee a .menu-item-icone{
             background-image: url("https://s2.svgbox.net/octicons.svg?ic=smiley");
         }
+        .accueil__css a .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/files.svg?ic=css");
+        }
+
+        .accueil__react a .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+        }
+
+        .accueil__html a .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+        }
+
+        .accueil__git a .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+        }
+
         .menu-item{ //li
             background: $color__menu__accueil__background;
             padding: 5px;

@@ -8,18 +8,29 @@
     height: fit-content;
     .menu{ //ul
         display: flex;
+        flex-direction: column;
         list-style-type: none;
+
+        @media screen and (min-width: $largeur__media-tablette){
+            flex-direction: row;
+
+            
+        }
 
 
         .menu-item{ //li
             text-align: center;
             width: 95px;
             margin: 0 15px;
+            margin-bottom: 10px;
             padding: 4px;
             border-radius: 10px;
             background-color:  $color__bouton__background;
             &:hover {
                 background-color: $color__bouton__background--hover;
+                
+               
+                
             }
             a{
                 text-decoration: none;
@@ -27,6 +38,12 @@
                 
 
             }
+
+            &pastille__cours--survole{
+                color:purple;
+            }
+
+           
         }
         .current-menu-item{
             background-color: $color__bouton__background--current;
@@ -51,3 +68,5 @@
         }
     }
 }
+
+
