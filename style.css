@@ -1,14 +1,13 @@
 @charset "UTF-8";
 /**
-Theme name: 2022-4w4 tp2 Marc-Antoine Sicotte
+Theme name: 2022-4w4 Ex3 Marc-Antoine Sicotte
 Author : Marc-Antoine Sicotte
 Author URI: https://github.com/MarcSicotte/4w4_MarcAntoine_Sicotte.git
-Description: TP final dans le cadre du cours 4w4 Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
+Description: Lab dans le cadre du cours 4w4 Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
 Version: 1.0 
 Require PHP: 7.4
 License: GNU General Public License v2 later
 Text Domain: cidw-4w4
-https://github.com/MarcSicotte/4w4-tp2/tree/ex4
 */
 /* -----------------------------------------------------------------
 VARIABLES
@@ -381,18 +380,13 @@ html {
   gap: 10px;
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "barre"
- "header"
- "main"
- "footer";
+  grid-template-areas: "barre" "header" "main" "footer";
 }
 
 @media screen and (min-width: 600px) {
   .site {
     grid-template-columns: 300px auto;
-    grid-template-areas: "header header"
- "barre main"
- "footer footer";
+    grid-template-areas: "header header" "barre main" "footer footer";
   }
   .home {
     height: 100%;
@@ -400,10 +394,7 @@ html {
     gap: 10px;
     display: grid;
     grid-template-columns: auto;
-    grid-template-areas: "barre"
- "header"
- "main"
- "footer";
+    grid-template-areas: "barre" "header" "main" "footer";
   }
 }
 
@@ -943,47 +934,47 @@ li {
 /*
     NAVIGATION POUR LA PAGE FRONT-PAGE.PHP
 */
-.menu-accueil-container .menu, .menu-evenement-container .menu {
+.menu-accueil-container .menu, .menu-evenement-container .menu, .menu-atelier-container .menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 @media screen and (min-width: 600px) {
-  .menu-accueil-container .menu, .menu-evenement-container .menu {
+  .menu-accueil-container .menu, .menu-evenement-container .menu, .menu-atelier-container .menu {
     flex-direction: row;
   }
 }
 
-.menu-accueil-container .menu .accueil__cours a .menu-item-icone, .menu-evenement-container .menu .accueil__cours a .menu-item-icone {
+.menu-accueil-container .menu .accueil__cours a .menu-item-icone, .menu-evenement-container .menu .accueil__cours a .menu-item-icone, .menu-atelier-container .menu .accueil__cours a .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=repo");
 }
 
-.menu-accueil-container .menu .accueil__aide a .menu-item-icone, .menu-evenement-container .menu .accueil__aide a .menu-item-icone {
+.menu-accueil-container .menu .accueil__aide a .menu-item-icone, .menu-evenement-container .menu .accueil__aide a .menu-item-icone, .menu-atelier-container .menu .accueil__aide a .menu-item-icone {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=live_help");
 }
 
-.menu-accueil-container .menu .accueil__etudiants a .menu-item-icone, .menu-evenement-container .menu .accueil__etudiants a .menu-item-icone {
+.menu-accueil-container .menu .accueil__etudiants a .menu-item-icone, .menu-evenement-container .menu .accueil__etudiants a .menu-item-icone, .menu-atelier-container .menu .accueil__etudiants a .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board");
 }
 
-.menu-accueil-container .menu .accueil__profs a .menu-item-icone, .menu-evenement-container .menu .accueil__profs a .menu-item-icone {
+.menu-accueil-container .menu .accueil__profs a .menu-item-icone, .menu-evenement-container .menu .accueil__profs a .menu-item-icone, .menu-atelier-container .menu .accueil__profs a .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=people");
 }
 
-.menu-accueil-container .menu .accueil__porte a .menu-item-icone, .menu-evenement-container .menu .accueil__porte a .menu-item-icone {
+.menu-accueil-container .menu .accueil__porte a .menu-item-icone, .menu-evenement-container .menu .accueil__porte a .menu-item-icone, .menu-atelier-container .menu .accueil__porte a .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=office-building");
 }
 
-.menu-accueil-container .menu .accueil__projet a .menu-item-icone, .menu-evenement-container .menu .accueil__projet a .menu-item-icone {
+.menu-accueil-container .menu .accueil__projet a .menu-item-icone, .menu-evenement-container .menu .accueil__projet a .menu-item-icone, .menu-atelier-container .menu .accueil__projet a .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=star");
 }
 
-.menu-accueil-container .menu .accueil__journee a .menu-item-icone, .menu-evenement-container .menu .accueil__journee a .menu-item-icone {
+.menu-accueil-container .menu .accueil__journee a .menu-item-icone, .menu-evenement-container .menu .accueil__journee a .menu-item-icone, .menu-atelier-container .menu .accueil__journee a .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=smiley");
 }
 
-.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
+.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item, .menu-atelier-container .menu .menu-item {
   background: linear-gradient(45deg, #151c9e 5%, #fd541d 50%, #fda52a 100%);
   padding: 5px;
   border-radius: 10px;
@@ -996,23 +987,23 @@ li {
   list-style: none;
 }
 
-.menu-accueil-container .menu .menu-item:hover :nth-child(3), .menu-evenement-container .menu .menu-item:hover :nth-child(3) {
+.menu-accueil-container .menu .menu-item:hover :nth-child(3), .menu-evenement-container .menu .menu-item:hover :nth-child(3), .menu-atelier-container .menu .menu-item:hover :nth-child(3) {
   animation-name: grossissementIcone;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
 }
 
-.menu-accueil-container .menu .menu-item:hover, .menu-evenement-container .menu .menu-item:hover {
+.menu-accueil-container .menu .menu-item:hover, .menu-evenement-container .menu .menu-item:hover, .menu-atelier-container .menu .menu-item:hover {
   background: linear-gradient(225deg, #151c9e 5%, #fd541d 50%, #fda52a 100%);
 }
 
 @media screen and (min-width: 600px) {
-  .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
+  .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item, .menu-atelier-container .menu .menu-item {
     margin: 0 30px;
   }
 }
 
-.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
+.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a, .menu-atelier-container .menu .menu-item a {
   color: white;
   font-size: 1rem;
   text-decoration: none;
@@ -1023,17 +1014,17 @@ li {
   align-items: center;
 }
 
-.menu-accueil-container .menu .menu-item a:hover, .menu-evenement-container .menu .menu-item a:hover {
+.menu-accueil-container .menu .menu-item a:hover, .menu-evenement-container .menu .menu-item a:hover, .menu-atelier-container .menu .menu-item a:hover {
   font-weight: bolder;
   font-size: 1.05rem;
 }
 
-.menu-accueil-container .menu .menu-item a hr, .menu-evenement-container .menu .menu-item a hr {
+.menu-accueil-container .menu .menu-item a hr, .menu-evenement-container .menu .menu-item a hr, .menu-atelier-container .menu .menu-item a hr {
   width: 95%;
   margin-bottom: 10px;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
+.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone, .menu-atelier-container .menu .menu-item a .menu-item-icone {
   margin-top: auto;
   margin-bottom: 20px;
   width: 2rem;

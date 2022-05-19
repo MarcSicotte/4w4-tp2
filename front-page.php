@@ -20,6 +20,13 @@
     
     ?>
 
+    <h2>Les ateliers à venir<h2>
+    <?php wp_nav_menu(array(
+        "menu" => "atelier",
+        "container" => "nav" ));
+    
+    ?>
+
     <?php if (have_posts()): the_post();?>
         <div class="galerieImg">
             <?php the_title()?>
