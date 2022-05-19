@@ -966,7 +966,7 @@ li {
   background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=office-building");
 }
 
-.menu-accueil-container .menu .accueil__projet a .menu-item-icone, .menu-evenement-container .menu .accueil__projet a .menu-item-icone, .menu-atelier-container .menu .accueil__projet a .menu-item-icone {
+.menu-accueil-container .menu .accueil__projets a .menu-item-icone, .menu-evenement-container .menu .accueil__projets a .menu-item-icone, .menu-atelier-container .menu .accueil__projets a .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=star");
 }
 
