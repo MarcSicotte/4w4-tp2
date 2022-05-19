@@ -42,6 +42,22 @@
         .accueil__journee a .menu-item-icone{
             background-image: url("https://s2.svgbox.net/octicons.svg?ic=smiley");
         }
+        .accueil__css a .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/files.svg?ic=css");
+        }
+
+        .accueil__react a .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+        }
+
+        .accueil__html a .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+        }
+
+        .accueil__git a .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+        }
+
         .menu-item{ //li
             background: $color__menu__accueil__background;
             padding: 5px;

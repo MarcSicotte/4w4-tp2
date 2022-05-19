@@ -974,6 +974,22 @@ li {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=smiley");
 }
 
+.menu-accueil-container .menu .accueil__css a .menu-item-icone, .menu-evenement-container .menu .accueil__css a .menu-item-icone, .menu-atelier-container .menu .accueil__css a .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=css");
+}
+
+.menu-accueil-container .menu .accueil__react a .menu-item-icone, .menu-evenement-container .menu .accueil__react a .menu-item-icone, .menu-atelier-container .menu .accueil__react a .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+}
+
+.menu-accueil-container .menu .accueil__html a .menu-item-icone, .menu-evenement-container .menu .accueil__html a .menu-item-icone, .menu-atelier-container .menu .accueil__html a .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+}
+
+.menu-accueil-container .menu .accueil__git a .menu-item-icone, .menu-evenement-container .menu .accueil__git a .menu-item-icone, .menu-atelier-container .menu .accueil__git a .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+}
+
 .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item, .menu-atelier-container .menu .menu-item {
   background: linear-gradient(45deg, #151c9e 5%, #fd541d 50%, #fda52a 100%);
   padding: 5px;
