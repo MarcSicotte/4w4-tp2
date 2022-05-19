@@ -20,10 +20,14 @@
     }
 
     &__infos{
-        display: flex;
-        column-gap: 20%;
         margin-bottom: 40px;
+        .atelier__endroit{
+            display: flex;
+            flex-direction: column;
+        }
     }
+
+    
 
    
     
